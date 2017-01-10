@@ -1,8 +1,14 @@
 def Reader():
-    with open('MauMau.config') as A:
-        Config=A.readlines()
+
+    global Card_set
+    global Rule_set
+    global Starting_Hand
+    global Players
     Card_set=[]
     Rule_set=[]
+
+    with open('MauMau.config') as A:
+        Config=A.readlines()
     for i in range(len(Config)):
         if Config[i]=='//\n':
             if Config[i+1]=='General:\n':

@@ -1,0 +1,2 @@
+def Move():
+    global Master
