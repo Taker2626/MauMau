@@ -1,4 +1,5 @@
-'''Main Program'''
+'''Main Prog'''
+
 #Load functions
 from Reader import Reader
 from Setup import Setup

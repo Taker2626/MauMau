@@ -1,9 +1,10 @@
 '''Executes one move'''
 def Game(Master,Player_lst,Turn,Rule_set):
     from Move import Move
+    from Play import Play
     while True:
-        Move(Master,Player_lst,Turn)                     #Client
-        if Play()==True:           #Checks wether move is valid
+        m=Move(Master,Player_lst,Turn)                     #Client
+        if Play(m,Master,Player_lst,Turn)==True:           #Checks wether move is valid
             break
     while True:
         Check()
