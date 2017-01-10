@@ -1,7 +1,8 @@
-def Game():
-    global Rules
+'''Executes one move'''
+def Game(Master,Player_lst,Turn,Rule_set):
+    from Move import Move
     while True:
-        Move()                     #Client
+        Move(Master,Player_lst,Turn)                     #Client
         if Play()==True:           #Checks wether move is valid
             break
     while True:

@@ -1,11 +1,7 @@
-def Setup(Card_set):
+'''Sets up a new Game by shuffeling cards and creating the Hands'''
+def Setup(Card_set,Players,Starting_Hand):
     from random import shuffle
     from copy import copy
-
-    global Player_lst
-    global Master
-    global Starting_Hand
-    global Players
 
     Player_lst=[]
     Master={}
@@ -25,5 +21,5 @@ def Setup(Card_set):
             exec(a)
             Master['Stack'].pop(0)
 
-
+    return [Player_lst, Master]
 #to change the order of players chagnge Player_lst

@@ -1,9 +1,5 @@
+'''Reads out config file'''
 def Reader():
-
-    global Card_set
-    global Rule_set
-    global Starting_Hand
-    global Players
     Card_set=[]
     Rule_set=[]
 
@@ -40,3 +36,4 @@ def Reader():
                     else:
                         break
     #finished
+    return [Card_set,Players,Starting_Hand,Rule_set]
