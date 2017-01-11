@@ -7,6 +7,7 @@ def Play(m,Master,Player_lst,Turn):
         m_card(Master,'Stack',0,Player_lst[Turn],0)
         print(Master)
         return True
+        Turn+=1
     elif m not in range(len(Hand)):
         Clear()
         print('Please enter a valid Number\n')
@@ -14,5 +15,5 @@ def Play(m,Master,Player_lst,Turn):
         return False
     else:
         Move_card(Master,Player_lst[Turn],m,'Trash',0)
-        print(Master)
         return True
+        Turn+=1

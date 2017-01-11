@@ -17,6 +17,6 @@ Turn=0             #Whos Turn is it?
 while True:
     [Player_lst, Master]=Setup(Card_set,Players,Starting_Hand)
     while Win==0:
-        [Master,Player_lst,Turn]=Game(Master,Player_lst,Turn,Rule_set)         #calls Applier
+        Game(Master,Player_lst,Turn,Rule_set)         #calls Applier
         Win()          #qick check of Master
     End()
