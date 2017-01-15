@@ -9,14 +9,14 @@ def Game(Master,Player_lst,Turn,Rule_set):
             break
     while True:
         Rules=Check(Master,Rule_set)
-            if Rules!=-1:
-                if '+'in Rules:          #can send back to Move()
-                    Applier('+')
-                elif '0' in Rules:
-                    Applier('0')
-                elif '*' in Rules:
-                    Applier('*')
-                elif '1' in Rules:         #Can't Play draws a card
-                    Applier('1')
-            elif Rules==-1:
-                return
+        if Rules!=-1:
+            if '+'in Rules:          #can send back to Move()
+                Applier('+')
+            elif '0' in Rules:
+                Applier('0')
+            elif '*' in Rules:
+                Applier('*')
+            elif '1' in Rules:         #Can't Play draws a card
+                Applier('1')
+        elif Rules==-1:
+             return
